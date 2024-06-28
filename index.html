@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="parentDisable"></div>
+
+      <div class="wrapper wrapper--success-box">
+        <div class="flow" style="padding-block: 1.5rem">
+          <div class="flex-row">
+            <img src="assets/images/icon-success-check.svg" alt="" />
+            <p class="fs-500 fw-bold">Message Sent!</p>
+          </div>
+
+          <p>Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+      </div>
+
+      <div class="wrapper wrapper--form">
+        <h2 class="wrapper__title">Contact Us</h2>
+
+        <form action="#" class="contact-form" novalidate>
+          <div class="grid-2-col">
+            <div>
+              <label for="fname" class="margin-bottom"
+                >First Name<abbr title="required" aria-label="required"
+                  >*</abbr
+                ></label
+              >
+
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                class="form-control"
+                data-type="form-element"
+                required
+              />
+
+              <p class="error-msg error-msg--fname"></p>
+            </div>
+
+            <div>
+              <label for="lname" class="margin-bottom"
+                >Last Name<abbr title="required" aria-label="required"
+                  >*</abbr
+                ></label
+              >
+
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                class="form-control"
+                data-type="form-element"
+                required
+              />
+
+              <p class="error-msg error-msg--lname"></p>
+            </div>
+          </div>
+
+          <div>
+            <label for="email" class="margin-bottom"
+              >Email Address<abbr title="required" aria-label="required"
+                >*</abbr
+              ></label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              data-type="form-element"
+              required
+            />
+
+            <p class="error-msg error-msg--email"></p>
+          </div>
+
+          <div>
+            <p class="margin-bottom">
+              Query Type<abbr title="required" aria-label="required">*</abbr>
+            </p>
+
+            <div class="grid-2-col" style="--gap: 1rem">
+              <label for="rd1" class="form-control flex-row">
+                <input
+                  type="radio"
+                  id="rd1"
+                  name="radio-oval"
+                  value="General Enquiry"
+                  data-type="form-element"
+                  required
+                />General Enquiry</label
+              >
+
+              <label for="rd2" class="form-control flex-row"
+                ><input
+                  type="radio"
+                  id="rd2"
+                  name="radio-oval"
+                  value="Support Request"
+                  data-type="form-element"
+                  required
+                />Support Request</label
+              >
+            </div>
+
+            <p class="error-msg error-msg--radio-oval"></p>
+          </div>
+
+          <div>
+            <label for="textarea" class="margin-bottom"
+              >Message<abbr title="required" aria-label="required"
+                >*</abbr
+              ></label
+            >
+
+            <textarea
+              name="textarea"
+              id="textarea"
+              class="form-control"
+              data-type="form-element"
+              required
+            ></textarea>
+
+            <p class="error-msg error-msg--textarea"></p>
+          </div>
+
+          <div>
+            <div class="flex-row">
+              <input
+                type="checkbox"
+                id="chb-terms"
+                data-type="form-element"
+                required
+              />
+
+              <label for="chb-terms" class="terms"
+                >I consent to being contacted by the team<abbr
+                  title="required"
+                  aria-label="required"
+                  >*</abbr
+                ></label
+              >
+            </div>
+
+            <p class="error-msg error-msg--chb-terms"></p>
+          </div>
+
+          <button type="submit" class="submit-btn | form-control">
+            Submit
+          </button>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
